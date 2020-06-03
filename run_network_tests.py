@@ -208,13 +208,13 @@ if __name__ == '__main__':
     #toy_example(15,16,'gcn', use_max_epochs=False,use_epochs=90,eval_strat='greedy')
 
     #Uncomment here to benchmark on beasley instance for GCN based model with 15 layers and 16 features
-    #for eval_strat in eval_strats:
-    #    beasley_test(15, 16, 'gcn', eval_strat=eval_strat, use_max_epochs=False, use_epochs=90)
+    for eval_strat in eval_strats:
+        beasley_test(15, 16, 'gcn', eval_strat=eval_strat, use_max_epochs=False, use_epochs=90)
 
     #Uncomment here to benchmark on beasley instance for GAT based model with 5 layers and 16 features and 2 heads
     #for eval_strat in eval_strats:
     #    beasley_test(5, 16, 'gat', heads=2, eval_strat=eval_strat, use_max_epochs=False, use_epochs=90)
 
     #Uncomment here to benchmark on beasley instance for GAT based model with 10 layers and 16 features and 2 heads
-    for eval_strat in eval_strats:
-        beasley_test(10, 16, 'gat', heads=2, eval_strat=eval_strat, use_max_epochs=False, use_epochs=90)
+    #for eval_strat in eval_strats:
+    #    beasley_test(10, 16, 'gat', heads=2, eval_strat=eval_strat, use_max_epochs=False, use_epochs=90)

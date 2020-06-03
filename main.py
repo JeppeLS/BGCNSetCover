@@ -396,7 +396,10 @@ class SubsetEvaluation:
     def load_model(self, path):
         if os.path.isfile(path):
             print('Loading model')
-            checkpoint = torch.load(path)
+            if self.device == 'cpu':
+                checkpoint = torch.load(path, map_location=torch.device('cpu'))
+            else:
+                checkpoint = torch.load(path)
             self.model.load_state_dict(checkpoint['model_state_dict'])
             self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             self.loss_values = checkpoint['loss_values']

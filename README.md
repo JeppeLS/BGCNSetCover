@@ -12,13 +12,17 @@ This repository contains the code for the thesis "Learning Heuristics for the Un
 ## Installation
 To test the code, first clone the repository
 ```
-https://github.com/JeppeLS/speciale.git
+git clone https://github.com/JeppeLS/BGCNSetCover.git
 ```
 Next install dependencies by running:
 ```
 pip install -r requirements.txt
 ```
-Furthermore a working installation of Pytorch Geometric is needed. Installations instructions can be found at https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+Furthermore a working installation of Pytorch and Pytorch Geometric is needed. First install Pytorch by following the guide at https://pytorch.org/get-started/locally/ 
+
+The model is trained using CUDA cores, but it has also been tested to work on the CPU, if you have a CUDA-enabled GPU we suggest installing the CUDA version of Pytorch.
+
+Next install Pytorch Geometric. Installations instructions can be found at https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 
 ## Replicating results
 
